@@ -4,8 +4,9 @@ import Topmenu from './Components/Topmenu';
 import Leftmenu from './Components/Leftmenu';
 import Rightcontent from './Components/Rightcontent';
 import Login from './Components/Login';
+import Register from './Components/Register';
 import Submenu from './Components/Submenu';
-
+import {Route,Switch} from 'react-router-dom';
 
 
 function App() {
@@ -31,7 +32,26 @@ function App() {
 
 
     <Grid item xs={8} style={{background:"#D3D3D3"}}>
-            <Login/>
+
+
+         <Switch>
+
+         <Route path = "/" exact>
+            
+          </Route>
+
+              <Route path = "/login" exact>
+              <Login/>
+              </Route>
+
+               <Route path = "/register" exact>
+                    <Register/>
+                </Route>
+
+         </Switch>
+
+
+  
     </Grid>
 
     <Grid item xs={2}>

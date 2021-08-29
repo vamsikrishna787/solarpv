@@ -8,28 +8,28 @@ import Typography from '@material-ui/core/Typography';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import SendIcon from '@material-ui/icons/Send';
 import PriorityHighIcon from '@material-ui/icons/PriorityHigh';
+import {Link} from 'react-router-dom';
 
-
-export default function TypographyMenu() {
+export default function Leftmenu() {
   
-  return (
+  return <>
     <Paper>
       <MenuList>
        
-        <MenuItem>
+       <MenuItem component={Link} to={'/login'}>
           <ListItemIcon>
             <SendIcon fontSize="small" />
           </ListItemIcon>
-          <Typography variant="inherit">Register</Typography> 
+      <Typography variant="inherit">Login</Typography>
         </MenuItem>
 
 
 
-        <MenuItem>
+        <MenuItem component={Link} to={'/register'}>
           <ListItemIcon>
             <PriorityHighIcon fontSize="small" />
           </ListItemIcon>
-          <Typography variant="inherit">Login</Typography>
+          <Typography variant="inherit">Register</Typography>
         </MenuItem>
 
 
@@ -49,5 +49,5 @@ export default function TypographyMenu() {
         
       </MenuList>
     </Paper>
-  );
+  </>;
 }
