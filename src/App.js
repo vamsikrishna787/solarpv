@@ -31,7 +31,7 @@ function App() {
     </Grid>
 
 
-    <Grid item xs={8} style={{background:"#D3D3D3"}}>
+    <Grid item xs={8} >
 
 
          <Switch>

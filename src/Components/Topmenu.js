@@ -6,6 +6,8 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Avatar from '@material-ui/core/Avatar';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,8 +31,12 @@ export default function Topmenu() {
           {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton> */}
+
+<Avatar alt="Remy Sharp" src="https://www.eqmagpro.com/wp-content/uploads/2019/04/Bolivia-joins-International-Solar-Alliance.jpg" className={classes.large} />
+
           <Typography variant="h6" className={classes.title}>
-            Solar PV
+            Solar PV<br/>
+            Research & Development
           </Typography>
           <Button color="inherit">About Us</Button>
           <Button color="inherit">Contact Us</Button>

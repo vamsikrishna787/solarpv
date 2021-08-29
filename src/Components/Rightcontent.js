@@ -42,7 +42,7 @@ export default function MediaCard() {
 
 
     <Card className={classes.root} style={{margin:"2px"}}>
-      <CardActionArea  target="_blank" href="https://www.aljazeera.com/news/2021/8/29/powerful-hurricane-ida-makes-landfall-in-louisiana">
+      <CardActionArea  target="_blank" href="https://nypost.com/2021/08/29/sullivan-biden-relied-on-military-officials-on-bagram-airport/">
         <CardMedia
           className={classes.media}
           image="https://nypost.com/wp-content/uploads/sites/2/2021/08/Jake-sullivan-027.jpg?quality=90&strip=all"
