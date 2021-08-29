@@ -6,6 +6,7 @@ import Rightcontent from './Components/Rightcontent';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Submenu from './Components/Submenu';
+import Home from './Components/Home';
 import {Route,Switch} from 'react-router-dom';
 
 
@@ -37,7 +38,7 @@ function App() {
          <Switch>
 
          <Route path = "/" exact>
-            
+            <Home/>
           </Route>
 
               <Route path = "/login" exact>

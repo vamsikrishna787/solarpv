@@ -59,6 +59,12 @@ export default function Leftmenu() {
      
       <MenuList>
        
+      <MenuItem component={Link} to={'/'}>
+          <ListItemIcon> <SendIcon fontSize="small" /> </ListItemIcon>
+          <Typography variant="inherit">Home</Typography>
+       </MenuItem>
+
+
        <MenuItem component={Link} to={'/login'}>
           <ListItemIcon> <SendIcon fontSize="small" /> </ListItemIcon>
           <Typography variant="inherit">Login</Typography>
