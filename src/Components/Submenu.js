@@ -28,7 +28,7 @@ export default function Submenu() {
         textColor="primary"
         centered
       >
-        <Tab label="Racks & Tracks" />
+        <Tab label="Racks  Tracks" />
         <Tab label="PV Modules" />
         <Tab label="PV Systems" />
         <Tab label="Data Analytics" />
