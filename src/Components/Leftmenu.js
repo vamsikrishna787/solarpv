@@ -95,7 +95,7 @@ export default function Leftmenu() {
          <ListItemIcon> <DraftsIcon fontSize="small" /> </ListItemIcon>
           <Typography variant="inherit" noWrap  > PV System Perfomance </Typography>
     </MenuItem>
-      <Menu  anchorE2={anchorE2} keepMounted open={Boolean(anchorE2)} onClose={handleClose2}>
+      <Menu  anchorEl={anchorE2} keepMounted open={Boolean(anchorE2)} onClose={handleClose2}>
         <MenuItem onClick={handleClose2}>   <ListItemIcon> <DraftsIcon fontSize="small" /> </ListItemIcon> <Typography variant="inherit" noWrap>Monitoring  & Inspection </Typography> </MenuItem>
         <MenuItem onClick={handleClose2}>   <ListItemIcon> <DraftsIcon fontSize="small" /> </ListItemIcon> <Typography variant="inherit" noWrap>Perfomance Analysis </Typography> </MenuItem>
         <MenuItem onClick={handleClose2}>   <ListItemIcon> <DraftsIcon fontSize="small" /> </ListItemIcon> <Typography variant="inherit" noWrap>Compare system </Typography> </MenuItem>
@@ -107,7 +107,7 @@ export default function Leftmenu() {
          <ListItemIcon> <DraftsIcon fontSize="small" /> </ListItemIcon>
           <Typography variant="inherit" noWrap  > Data Analytics </Typography>
     </MenuItem>
-      <Menu  anchorE3={anchorE3} keepMounted open={Boolean(anchorE3)} onClose={handleClose3}>
+      <Menu  anchorEl={anchorE3} keepMounted open={Boolean(anchorE3)} onClose={handleClose3}>
         <MenuItem onClick={handleClose3}>   <ListItemIcon> <DraftsIcon fontSize="small" /> </ListItemIcon> <Typography variant="inherit" noWrap>Module lifetime prediction </Typography> </MenuItem>
         <MenuItem onClick={handleClose3}>   <ListItemIcon> <DraftsIcon fontSize="small" /> </ListItemIcon> <Typography variant="inherit" noWrap>Energy Prediction </Typography> </MenuItem>
       </Menu>
