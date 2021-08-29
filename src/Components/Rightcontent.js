@@ -74,7 +74,21 @@ export default function MediaCard() {
       </CardActionArea>
     </Card>
 
-
+    <Card className={classes.root} style={{margin:"2px"}}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="https://material-ui.com/static/images/cards/contemplative-reptile.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+        
+          <Typography variant="body2" color="textSecondary" component="p">
+          Trump is next president
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
 
   </>;
 }

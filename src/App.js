@@ -4,6 +4,7 @@ import Topmenu from './Components/Topmenu';
 import Leftmenu from './Components/Leftmenu';
 import Rightcontent from './Components/Rightcontent';
 import Login from './Components/Login';
+import Submenu from './Components/Submenu';
 
 
 
@@ -19,13 +20,17 @@ function App() {
               <Topmenu/>
           </Grid>
 
+          <Grid item xs={12} style={{margin:"2px"}}>
+              <Submenu/>
+          </Grid>
+
 
     <Grid item xs={2}>
             <Leftmenu/>
     </Grid>
 
 
-    <Grid item xs={8}>
+    <Grid item xs={8} style={{background:"#D3D3D3"}}>
             <Login/>
     </Grid>
 
