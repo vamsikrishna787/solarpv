@@ -26,14 +26,15 @@ export default function Topmenu() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+          {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography variant="h6" className={classes.title}>
-            News
+            Solar PV
           </Typography>
-          <Button color="inherit">Login</Button>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">About Us</Button>
+          <Button color="inherit">Contact Us</Button>
+          <Button color="inherit">Social Media links</Button>
         </Toolbar>
       </AppBar>
     </div>
