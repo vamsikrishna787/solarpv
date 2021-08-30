@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 
@@ -14,6 +14,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 
 import FormControl from '@material-ui/core/FormControl';
+import {useRef,useState} from 'react';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -55,8 +56,14 @@ function  Register () {
     const classes = useStyles();
 const classes1 = useStyles1();
 
-    const [age, setAge] = React.useState('');
-    const [usstate, setusstate] = React.useState('');
+    const [age, setAge] = useState('');
+    const [usstate, setusstate] = useState('');
+
+
+    const [uservalid, setuservalid] = useState(false);
+    const [passwordvalid, setpasswordvalid] = useState(false);
+
+
 
     const handleChange = (event) => {
       setAge(event.target.value);
@@ -65,10 +72,67 @@ const classes1 = useStyles1();
       setusstate(event.target.value);
     };
 
+
+ const usernameref = useRef();
+ const paswordref = useRef();
+
+
+
+
     const formsubmithandler = event => {
       event.preventDefault();
-      console.log("test")
+    
+if(usernameref.current.value.trim() ==="")
+{
+  setuservalid(true);
+}
+else{
+  setuservalid(false);
+}
+
+
+if(paswordref.current.value.trim() ==="")
+{
+  setpasswordvalid(true);
+}
+else{
+  setpasswordvalid(false);
+}
+   
+      console.log("submit success");
 };
+
+
+
+const handleuserChange = (event) => {
+  
+  console.log(event.target.value)
+
+  if(event.target.value === '')
+  {
+    setuservalid(true);
+  }
+  else{
+    setuservalid(false);
+  }
+ 
+};
+
+
+const handlepasswordChange = (event) => {
+  
+  console.log(event.target.value)
+
+  if(event.target.value === '')
+  {
+    setpasswordvalid(true);
+  }
+  else{
+    setpasswordvalid(false);
+  }
+ 
+};
+
 
 
 return <>
@@ -92,11 +156,13 @@ return <>
 
 
           <Grid item xs={12}>
-              <TextField  variant="outlined" required fullWidth id="username" label="Username" name="username" autoComplete="username"/>
+              <TextField inputRef = {usernameref} error={uservalid} variant="outlined" required fullWidth id="username" label="Username" name="username" onChange={handleuserChange}  helperText= { uservalid && "Required."}/>
+         
+        
           </Grid>
 
           <Grid item xs={12}>
-              <TextField variant="outlined" required fullWidth name="password" label="Password" type="password" id="password" autoComplete="current-password"/>
+              <TextField inputRef = {paswordref}  error={passwordvalid} variant="outlined" required fullWidth name="password" label="Password" onChange={handlepasswordChange} type="password" id="password" helperText= { passwordvalid && "Required."}/>
             </Grid>
            
 
