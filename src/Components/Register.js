@@ -156,7 +156,7 @@ return <>
 
 
           <Grid item xs={12}>
-              <TextField inputRef = {usernameref} error={uservalid} variant="outlined" required fullWidth id="username" label="Username" name="username" onChange={handleuserChange}  helperText= { uservalid && "Required."}/>
+              <TextField inputRef = {usernameref} error={uservalid} variant="outlined" required fullWidth id="username" label="Username" name="username" onChange={handleuserChange}  helperText= { uservalid && "Required."} autoFocus/>
          
         
           </Grid>
@@ -167,7 +167,7 @@ return <>
            
 
             <Grid item xs={12} sm={4}>
-              <TextField autoComplete="fname" name="firstName" variant="outlined" required fullWidth id="firstName" label="First Name" autoFocus/>
+              <TextField autoComplete="fname" name="firstName" variant="outlined" required fullWidth id="firstName" label="First Name" />
             </Grid>
 
 
@@ -177,7 +177,7 @@ return <>
 
 
             <Grid item xs={12} sm={4}>
-              <TextField autoComplete="fname" name="firstName" variant="outlined" required fullWidth id="firstName" label="Middle Name" autoFocus/>
+              <TextField autoComplete="fname" name="firstName" variant="outlined" required fullWidth id="firstName" label="Middle Name" />
             </Grid>
 
 
