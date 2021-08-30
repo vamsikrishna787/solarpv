@@ -12,16 +12,16 @@ export default function Footer() {
           <Container maxWidth="md">
 
 
-          <Typography variant="body1" color="inherit">
+          <Typography variant="body1" c>
             Solar Pv
             </Typography> 
             <Toolbar>
-              <Typography variant="body1" color="inherit" align="right">
+              <Typography variant="body1" align="right">
                 © 2019 All Rights Reserved
               </Typography>
             </Toolbar> 
             
-            <Typography variant="body1" color="inherit">
+            <Typography variant="body1" >
                 Address, Phone, Email, Website
             </Typography>
             
