@@ -66,7 +66,8 @@ export default function Topmenu() {
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
-           How we Develope application
+          Solar cells, also called photovoltaic cells, convert sunlight directly into electricity. 
+          Photovoltaics (often shortened as PV) gets its name from the process of converting light (photons) to electricity (voltage), which is called the photovoltaic effect.   
           </DialogContentText>
         </DialogContent>
         <DialogActions>

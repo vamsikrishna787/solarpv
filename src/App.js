@@ -7,6 +7,7 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import Submenu from './Components/Submenu';
 import Home from './Components/Home';
+import Footer from './Components/Footer';
 import {Route,Switch} from 'react-router-dom';
 
 
@@ -58,7 +59,9 @@ function App() {
     <Grid item xs={2}>
              <Rightcontent/>
     </Grid>
-
+    <Grid item xs={12}>
+             <Footer/>
+    </Grid>
 
     </Grid>
 
